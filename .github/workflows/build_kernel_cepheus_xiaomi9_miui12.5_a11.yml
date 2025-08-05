@@ -2,6 +2,13 @@ name: Build Kernel Xiaomi 9 (MIUI12.5 A11) with KSU Sukisu U
 on:
   workflow_call:
   workflow_dispatch:
+    inputs:
+      CLEAN_BUILD:
+        description: 'Clean build (删除缓存)'
+        required: false
+        default: 'false'
+        type: boolean
+  
 env:
   PYTHON_VERSION: "3" # Only 2(Ubuntu 22.04) or 3(Any OS Versions).
   PACK_METHOD: "Anykernel3" # Anykernel3 need SOURCE and BRANCH, MKBOOTIMG needn't it.
