@@ -1,4 +1,4 @@
-name: Build Kernel Redmi K20Pro (Soviet-Star-OSS)(Based-AOSP A15) with KSU and SUSFS
+name: Build Kernel Xiaomi 9 (MIUI12.5 A11) with KSU Sukisu U 2
 on:
   workflow_call:
   workflow_dispatch:
